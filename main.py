@@ -109,6 +109,43 @@ print(reversed_cat_name)
 print(" ")
 website = "https://www.google.com"
 website_title = slice(12, -4)
-# slice(8, -4)
+website2 = "https://www.wikipedia.org"
 # website[12:-4]
 print(website[website_title])
+print(website2[website_title])
+print(" ")
+
+# If Statements
+user_age = int(input("How old are you? "))
+if user_age >= 16:
+    print("You can register to vote in the USA!")
+elif user_age <= 0:
+    print("You haven't been born yet...")
+else:
+    print("Unfortunately, you are not yet old enough to vote.")
+
+# elif = else if statements
+# elif can be used for more than two conditions. You can also use nested if statements.
+# else statements run if all above conditions are false.
+
+
+# Unsuccessful Testing Nested If Statements
+movies_question = input("Do you like movies? (y/n) ")
+disney_movies_question = input("Do you like Disney movies? (y/n) ")
+mulan_question = input("Do you like Mulan? (y/n) ")
+yes = "y"
+no = "n"
+
+print(movies_question)
+if movies_question == yes:
+    print(disney_movies_question)
+    if disney_movies_question == yes:
+        print(mulan_question)
+        if mulan_question == yes:
+            print("Nice! Let's be friends!")
+        else:
+            print("Fair enough.")
+    else:
+        print("Oh, cool.")
+else:
+    print("Oh, okay.")
