@@ -41,6 +41,7 @@ print('What would my name look like if all "A"s became "E"s? ' + full_name.lower
 print(thanos_buzzword * 3)
 BJ = "Beetlejuice"
 print(BJ * 3 + "\n")
+# Constants are capitalized, so BJ is actually a constant--not a variable.
 
 x = 1  # int
 y = 2.0  # float
@@ -130,18 +131,12 @@ else:
 
 
 # Unsuccessful Testing Nested If Statements
-movies_question = input("Do you like movies? (y/n) ")
-disney_movies_question = input("Do you like Disney movies? (y/n) ")
-mulan_question = input("Do you like Mulan? (y/n) ")
-yes = "y"
-no = "n"
 
-print(movies_question)
-if movies_question == yes:
-    print(disney_movies_question)
-    if disney_movies_question == yes:
-        print(mulan_question)
-        if mulan_question == yes:
+if input("Do you like movies? (y/n) ") == "y":
+    input("Do you like Disney movies? (y/n) ")
+    if input == "y":
+        input("Do you like Mulan? (y/n) ")
+        if input == "y":
             print("Nice! Let's be friends!")
         else:
             print("Fair enough.")
