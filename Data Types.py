@@ -1,9 +1,10 @@
-# Data Types
+# Data Types and variables
 
 age = 20
 age += 1
 print("On your birthday, you will turn " + str(age) + ".")
-# print(type(age)) can show you what data type age is.
+print(type(age))
+# The above line can show you what data type age is.
 
 x = 1  # int
 y = 2.0  # float
