@@ -128,19 +128,3 @@ else:
 # elif = else if statements
 # elif can be used for more than two conditions. You can also use nested if statements.
 # else statements run if all above conditions are false.
-
-
-# Unsuccessful Testing Nested If Statements
-
-if input("Do you like movies? (y/n) ") == "y":
-    input("Do you like Disney movies? (y/n) ")
-    if input == "y":
-        input("Do you like Mulan? (y/n) ")
-        if input == "y":
-            print("Nice! Let's be friends!")
-        else:
-            print("Fair enough.")
-    else:
-        print("Oh, cool.")
-else:
-    print("Oh, okay.")
