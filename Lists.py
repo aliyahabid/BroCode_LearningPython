@@ -45,3 +45,22 @@ for x in food:
     print(x)
 
 # listname.clear() clears the list of all of its data/elements.
+
+print("")
+
+
+# 2D Lists
+
+# 2D lists are lists of lists.
+
+entrees = ["baked ziti", "spaghetti and meatballs", "fettucine alfredo"]
+drinks = ["coke", "water", "lemonade", "unsweetened tea"]
+desserts = ["chocolate cake", "ice cream"]
+
+menu = [entrees, drinks, desserts]
+
+print(menu)
+print(menu[2])
+print("We have these drink options for diabetics: " + menu[1][1] + " and " + drinks[3])
+# You can write either menu[1][1] or drinks[3] to get "unsweetened tea."
+
