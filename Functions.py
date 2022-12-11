@@ -37,6 +37,3 @@ def hello(first_name, last_name, age):
 
 print("")
 hello("Tom", "Brady", 45)
-
-
-
