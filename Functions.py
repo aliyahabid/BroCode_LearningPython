@@ -59,3 +59,17 @@ print("")
 
 print(round(abs(float(input("Enter a whole, positive number: ")))))
 
+print("")
+
+# *Args
+
+# *Args is a parameter that packs all arguments into a tuple.
+# They're useful so that a function can accept a varying amount of arguments.
+
+def add(*nums):
+    sum = 0
+    for i in nums:
+        sum += i
+    return sum
+
+print(add(3,5,3,7))
