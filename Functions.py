@@ -37,3 +37,12 @@ def hello(first_name, last_name, age):
 
 print("")
 hello("Tom", "Brady", 45)
+
+print("")
+# Keyword Arguments
+
+# Keyword arguments are arguments preceded by an identifier when passed into a function.
+# The order of the arguments doesn't matter, unlike positional arguments.
+# When we use keyword args, Python knows the names of the arguments that our function receives.
+
+hello(last_name="Gomez", age=30, first_name="Selena")
