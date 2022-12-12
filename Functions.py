@@ -39,6 +39,7 @@ print("")
 hello("Tom", "Brady", 45)
 
 print("")
+
 # Keyword Arguments
 
 # Keyword arguments are arguments preceded by an identifier when passed into a function.
@@ -46,3 +47,15 @@ print("")
 # When we use keyword args, Python knows the names of the arguments that our function receives.
 
 hello(last_name="Gomez", age=30, first_name="Selena")
+
+print("")
+
+# Nested Function Calls
+
+# Nested function calls are function calls inside of other function calls.
+# The innermost function calls are resolved first and returned values are used as
+# arguments for the next outer function. They're used to consolidate function calls
+# into less lines of code. The following is an extreme example of a nested function call.
+
+print(round(abs(float(input("Enter a whole, positive number: ")))))
+
