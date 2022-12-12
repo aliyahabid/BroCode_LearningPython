@@ -30,7 +30,7 @@ print("")
 name = "Aliyah"
 def display_name():
     last_name = "Abid"
-    print(name)
+    print(last_name)
 
 print(name)
 display_name()
