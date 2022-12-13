@@ -73,3 +73,41 @@ def add(*nums):
     return sum
 
 print(add(3,5,3,7))
+
+# Since tuples are immutable, if you want to change the value in a tuple, you should
+# convert it to a different collection. The following is an example:
+
+def combine(*args):
+    total = 0
+    args = list(args)
+    args[0]=10
+    for i in args:
+        total += i
+    return total
+
+print(combine(3,5,3,7))
+
+
+# **Kwargs
+
+# **Kwargs is a parameter that packs all arguments into a dictionary.
+# It's useful because a function can accept varying amounts of keyword arguments.
+# **Kwargs is identical to *args except *args accepts varying amounts of positional
+# arguments and packs them into a tuple while **kwargs accepts keyword arguments
+# and packs them into a dictionary. The following is an example.
+
+def welcome(**kwargs):
+    print("Welcome, " + kwargs['first'] + " " + kwargs['last'] + "!")
+    print("You're " + str(kwargs['height']) + " cm tall.")
+
+welcome(last="Squarepants",first="Spongebob",middle="X",height=50)
+
+# Here's another example if you want to include as many names as given.
+
+def greeting(**names):
+    print("Hi, ", end=" ")
+    for key, value in names.items():
+        print(value, end=" ")
+    print("!")
+
+greeting(title="Mr.", first="Samuel", middle="L", last="Jackson")
