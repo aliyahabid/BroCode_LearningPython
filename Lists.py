@@ -63,4 +63,3 @@ print(menu)
 print(menu[2])
 print("We have these drink options for diabetics: " + menu[1][1] + " and " + drinks[3])
 # You can write either menu[1][1] or drinks[3] to get "unsweetened tea."
-
