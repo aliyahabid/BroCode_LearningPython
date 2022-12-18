@@ -1,5 +1,3 @@
-# Modules
-
 # Random Module
 
 # Numbers generated in the random module are not truly random, rather they're pseudo-random.

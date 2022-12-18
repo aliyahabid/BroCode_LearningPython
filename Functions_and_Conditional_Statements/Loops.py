@@ -35,7 +35,7 @@ import time
 # for i in "Aliyah":
 #    print(i)
 
-# Countdown example:
+# Countdown example (import time before this):
 # for seconds in range(10,0,-1):
 #    print(seconds)
 #    time.sleep(1)
