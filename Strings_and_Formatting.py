@@ -78,11 +78,55 @@ print("Welcome user {:^10}. Here is your dashboard.".format(username)) # Center 
 print(" ")
 
 # Keyword argument examples:
-print("Welcome user {username:10}. Here is your {screen}.".format(username="whigpartyman",screen="dashboard"))
-print("Welcome user {username:20}. Here is your {screen}.".format(username="whigpartyman",screen="dashboard"))
+print("Welcome user {username:10}. Here is your account {screen}.".format(username="whigparty",
+                                                                  screen="dashboard"))
+print("Welcome user {username:20}. Here is your account {screen}.".format(username="whigparty",
+                                                                  screen="dashboard"))
 
 # Positional argument example:
 print("Welcome user {0:^20}. Here is your {1}.".format("whigpartyman","dashboard"))
+print("")
+
+
+# Formatting Numbers
+
+# Example
+number = 4.72853237
+
+print("The value of the number rounded to 3 significant figures is {:.2f}.".format(number))
+# f in .2f is for floating point numbers. .2f will display the first 2 digits after the decimal
+# and round your number.
+
+# {:,} will add commas to every thousand value in the number.
+number2 = 5235900.5
+print("This is the second number with commas included: {:,}.".format(number2))
+
+number3 = 75
+print("Here I am testing with the f in curly braces and see it includes "
+      "6 decimal places by default: {:f}".format(number3))
+print("")
+
+# You can also use f strings as a faster way of formatting instead of .format().
+number4 = 3456
+print(f"Here, I'm using an f-string for number {number4:,}.")
+
+# You can display a binary, octal, and hexadecimal representation of your number too.
+print("The same number in binary is {:b}.".format(number4))
+print("The same number in octal is {:o}.".format(number4))
+print("The same number in (lowercase) hexadecimal is {:x}.".format(number4)) # x = Lowercase hexadecimal
+print("The same number in (capital) hexadecimal is {:X}.".format(number4)) # X = Uppercase hexadecimal
+
+# You can also display a number in scientific notation
+print("The same number in (lowercase) scientific notation is {:e}.".format(number4))
+print("The same number in (uppercase) scientific notation is {:E}.".format(number4))
+
+
+
+
+
+
+
+
 
 
 
